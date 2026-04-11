@@ -1,21 +1,19 @@
 # Video Game Industry Analysis (2000–2013)
 
-##  Project Goal
+## Project Goal
 
-The goal of this project is to analyze the development of the video game industry from 2000 to 2013 based on historical data on game sales, platforms, genres, and user and critic ratings.  
+The goal of this project is to analyze the video game industry from 2000 to 2013 using historical data on sales, platforms, genres, and user and critic ratings.
 
-The analysis helps to identify key trends in the gaming industry and understand factors influencing game success.
+The analysis aims to identify key market trends and understand factors influencing game success.
 
 ---
 
-##  Dataset Description
+## Dataset Description
 
-The dataset `/datasets/new_games.csv` contains information about video games, including sales, platforms, genres, and ratings.
-
-Each record represents a single game and includes the following features:
+The dataset `/data/new_games.csv` contains information about video games, including:
 
 - **Name** — game title  
-- **Platform** — platform of release  
+- **Platform** — game platform
 - **Year of Release** — release year  
 - **Genre** — game genre  
 - **NA sales** — sales in North America (millions)  
@@ -28,39 +26,39 @@ Each record represents a single game and includes the following features:
 
 ---
 
-##  Project Workflow
+---
 
-The project includes the following steps:
+## Project Workflow
 
-- Loading and initial exploration of the dataset  
-- Data cleaning and preprocessing:
-  - handling missing values  
-  - correcting data types  
-  - removing duplicates  
-  - standardizing column names  
+The analysis includes the following steps:
+
+- Data loading and initial inspection  
+- Data cleaning (handling missing values, fixing data types, removing duplicates)  
 - Filtering data for the period 2000–2013  
-- Categorizing games by user and critic ratings  
-- Identifying top platforms by number of games  
-- Analysis of trends in the gaming industry  
+- Exploratory data analysis (platforms, genres, regional sales, ratings)  
+- Correlation analysis between ratings and sales  
+- Visualization of key trends  
 
 ---
 
 ## Key Insights
 
-- The dataset required significant preprocessing, including handling missing values, correcting data types, and removing duplicates (~3% of rows were removed)
-- Certain platforms (such as PS2, DS, and Wii) dominated the market during 2000–2013
-- User and critic scores contain missing values but remain useful for analyzing game performance trends
-- The video game market in this period was strongly platform-driven, with clear leaders in terms of game releases
+- The North American and European markets show similar patterns and dominate global sales, while Japan behaves differently.
+- Action and Sports are the most popular genres in Western markets, while Role-Playing games dominate in Japan.
+- A small number of platforms account for most game releases, indicating a concentrated market structure.
+- Sales peaked around 2007–2008 and then declined.
+- Critic scores show a weak positive correlation with sales, while user scores have almost no significant relationship.
 
 ---
 
 ## Conclusion
 
-This project provides an overview of the video game industry between 2000 and 2013.  
-The analysis highlights key platforms, regional sales distribution, and the relationship between ratings and game popularity.
+The video game market between 2000 and 2013 was strongly influenced by regional preferences, platform dominance, and genre popularity.
+
+While critic scores have a slight impact on sales, they are not a strong predictor of commercial success. Overall, market performance is driven more by platform and genre trends than by user or critic ratings.
+
+---
 
 ## Tools Used
 
-- Python  
-- pandas  
-- matplotlib
+- Python (pandas, matplotlib)
