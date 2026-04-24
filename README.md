@@ -60,5 +60,6 @@ While critic scores have a slight impact on sales, they are not a strong predict
 ---
 
 ## Tools Used
-
-- Python (pandas, matplotlib)
+- Python 3.9 (Jupyter Notebook environment)
+- pandas
+- matplotlib
